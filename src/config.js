@@ -12,7 +12,7 @@ const config = assign({
   production: {
     api: {
       safe_harbor: {
-        host: 'https://api.trade.gov/safe_harbor_eu/search',
+        host: 'https://api.trade.gov/v1/safe_harbor_eu/search',
         apiKey: 'O6fmOIPtrvDlqoDe2_6UbKJc',
       },
     },
