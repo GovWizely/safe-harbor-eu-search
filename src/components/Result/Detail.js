@@ -30,8 +30,8 @@ const Detail = ({ result }) => (
       <Row label="Corporation Officer Fax">{result.corp_officer_fax}</Row>
       <Row label="Corporation Officer Email">{result.corp_officer_email}</Row>
 
-      <Row label="PP Effective Date">{result.pp_effective_date}</Row>
-      <Row label="PP Location">
+      <Row label="Privacy Policy Effective Date">{result.pp_effective_date}</Row>
+      <Row label="Privacy Policy Location">
         <Link value={result.pp_location} />
       </Row>
       <Row label="Statutory Description">{result.statutory_desc}</Row>
