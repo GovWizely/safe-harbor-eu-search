@@ -1,7 +1,7 @@
 {
-  "name": "csl-search",
+  "name": "safe-harbor-eu-search",
   "version": "0.0.1",
-  "description": "Consolidated Screening List Search App",
+  "description": "Safe Harbor EU List Search App",
   "license": "MIT",
   "repository": {
     "type": "git",
