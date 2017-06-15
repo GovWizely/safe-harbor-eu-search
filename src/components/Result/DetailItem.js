@@ -12,7 +12,14 @@ const isValidChildren = (value) => {
   return true;
 };
 
-const Link = ({ value }) => <a href={value}>{value}</a>;
+const Link = ({ value }) => {
+  let absolute_link = value;
+  if (value != null && !value.includes('http')){
+    absolute_link = 'http://' + absolute_link;
+  }
+
+  return <a href={absolute_link}>{value}</a>;
+}
 Link.propTypes = { value: PropTypes.string.isRequired };
 
 const ListItem = ({ value }) => (value ? <li>{value}</li> : null);

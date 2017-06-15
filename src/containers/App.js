@@ -59,7 +59,7 @@ class App extends Component {
         On July 12, 2016, U.S. Secretary of Commerce Penny Pritzker joined European Union Commissioner Věra Jourová to announce the approval of the EU-U.S. Privacy Shield Framework as a valid legal mechanism to comply with EU requirements when transferring personal data from the European Union to the United States. The EU-U.S. Privacy Shield Framework replaces the U.S.-EU Safe Harbor Framework. The Department began accepting certifications on August 1, 2016.
         </p>
         <p>
-          As of October 31, 2016, the Department stopped accepting all U.S.-EU Safe Harbor certifications. The Department will maintain the <a href="https://safeharbor.export.gov/list.aspx">U.S.-EU Safe Harbor List</a> of participants.
+          As of October 31, 2016, the Department stopped accepting all U.S.-EU Safe Harbor certifications. The Department will maintain the U.S.-EU Safe Harbor List of participants.
         </p>
         <h3>
           U.S.-Swiss Safe Harbor
@@ -68,7 +68,7 @@ class App extends Component {
           On January 12, 2017, Swiss Federal Councillor Johann Schneider-Ammann announced the approval of the Swiss-U.S. Privacy Shield Framework as a valid legal mechanism to comply with Swiss requirements when transferring personal data from Switzerland to the United States. The Swiss-U.S. Privacy Shield Framework will immediately replace the U.S.-Swiss Safe Harbor. To give organizations the time needed to review the Privacy Shield Principles and the commitments they entail, U.S. Acting Under Secretary of Commerce Ken Hyatt announced that the Department will begin accepting Privacy Shield certifications on April 12, 2017.
         </p>
         <p>
-          Beginning April 12, 2017, the Department of Commerce will no longer accept any U.S.-Swiss Safe Harbor certifications. The Department will maintain the <a href="https://safeharbor.export.gov/swisslist.aspx">U.S.-Swiss Safe Harbor List</a> of participants.
+          Beginning April 12, 2017, the Department of Commerce will no longer accept any U.S.-Swiss Safe Harbor certifications. The Department will maintain the <a href="https://www.export.gov/safeharbor_swiss">U.S.-Swiss Safe Harbor List</a> of participants.
         </p>
         <p>
           Please note that, pursuant to the Safe Harbor Frequently Asked Question on Self-Certification, the commitment to adhere to the U.S.-EU and U.S.-Swiss Safe Harbor Principles is not time-limited, and a participating organization must continue to apply the Principles to data received under the Safe Harbor.

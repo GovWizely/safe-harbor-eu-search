@@ -4,7 +4,7 @@ const config = assign({
   development: {
     api: {
       safe_harbor: {
-        host: 'http://127.0.0.1:3000/v1/safe_harbor/search',
+        host: 'http://127.0.0.1:3000/v1/safe_harbor_eu/search',
         apiKey: 'devkey',
       },
     },
