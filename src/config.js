@@ -4,8 +4,8 @@ const config = assign({
   development: {
     api: {
       safe_harbor: {
-        host: 'http://127.0.0.1:3000/v1/safe_harbor_eu/search',
-        apiKey: 'devkey',
+        host: 'https://api.trade.gov/v1/safe_harbor_eu/search',
+        apiKey: 'O6fmOIPtrvDlqoDe2_6UbKJc',
       },
     },
   },

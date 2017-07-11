@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react';
 import { AddressList, IdentificationList, Link, Row, UnorderedList } from './DetailItem';
 import moment from 'moment';
+import { map } from '../../utils/lodash';
 
 const Detail = ({ result }) => (
   <table className="explorer__result-item__detail">
@@ -39,7 +40,7 @@ const Detail = ({ result }) => (
       <Row label="Organization Human Resources Data Covered">{result.hr_data}</Row>
       <Row label="Agreement to Cooperate and Comply with EU and/or Swiss Data Protection Authorities">{result.eu_data_protection}</Row>
       <Row label="Relevant Countries from which Personal Information Received">
-        <UnorderedList value={result.eu_countries} />
+        <UnorderedList value={mapCountries(result.eu_countries)} />
       </Row>
 
       <Row label="Industry Sector 1">{result.industry_sector_1}</Row>
@@ -57,3 +58,49 @@ Detail.propTypes = {
 };
 
 export default Detail;
+
+const country_mappings = {
+  UNK:  'Kosovo',
+  GER:  'Germany',
+  FRA:  'France',
+  NED:  'Netherlands',
+  SPN:  'Spain',
+  ITA:  'Italy',
+  IRE:  'Ireland',
+  BEM:  'Belgium',
+  SWE:  'Sweden',
+  AUS:  'Australia',
+  DEN:  'Denmark',
+  POL:  'Poland',
+  PTL:  'Portugal',
+  FIN:  'Finland',
+  CZR:  'Czech Republic',
+  NOR:  'Norway',
+  GRE:  'Greenland',
+  HUN:  'Hungary',
+  LUX:  'Luxembourg',
+  SLO:  'Slovenia',
+  ROM:  'Romania',
+  SWI:  'Switzerland',
+  SLN:  'Slovenia',
+  LIT:  'Lithuania',
+  EST:  'Estonia',
+  LAT:  'Latvia',
+  BUL:  'Bulgaria',
+  CYP:  'Cyprus',
+  MAL:  'Mali',
+  ICE:  'Iceland',
+  LCT:  'Liechtenstein',
+  CRO:  'Croatia'
+}
+
+function mapCountries(country_codes) {
+  return map(country_codes, code => {
+    if (code in country_mappings)
+      return country_mappings[code];
+    else
+      return code;
+  });
+}
+
+
