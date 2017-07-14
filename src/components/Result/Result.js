@@ -5,7 +5,7 @@ import Pages from './Pages';
 import './Result.scss';
 
 const Label = ({ count, query }) => {
-  let text = 'Complete Safe Harbor EU List';
+  let text = 'U.S.-EU Safe Harbor List';
   if (!isEmpty(omit(query, 'offset'))) {
     if (count === 0) text = 'No result.';
     else if (count === 1) text = `${count} result.`;
