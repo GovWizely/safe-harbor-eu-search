@@ -1,14 +1,13 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
-import createHistory from 'history/lib/createHashHistory';
-import useQueries from 'history/lib/useQueries';
+import { createBrowserHistory } from 'history';
 import configureStore from './configureStore';
 import App from './containers/App';
 
 function renderToElement(elementId) {
   const store = configureStore();
-  const history = useQueries(createHistory)();
+  const history = createBrowserHistory();
 
   require('es6-promise').polyfill();
 
