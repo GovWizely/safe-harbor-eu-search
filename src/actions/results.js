@@ -23,11 +23,13 @@ export function receiveFailure(error) {
   };
 }
 
-const { host, apiKey } = config.api.safe_harbor;
+const { host, access_token } = config.api.safe_harbor;
 function fetchResults(querystring) {
   return (dispatch) => {
     dispatch(requestResults());
-    return fetch(`${host}?api_key=${apiKey}&${querystring}`)
+    return fetch(`${host}?${querystring}`, {
+      headers: { 'Authorization': 'Bearer ' + access_token }
+    })
       .then(response => response.json())
       .then(json => dispatch(receiveResults(json)));
   };

@@ -4,7 +4,7 @@ import { isEmpty, omit, values, has, map } from '../utils/lodash';
 import { SET_FORM_OPTIONS } from 'constants';
 import config from '../config.js';
 
-const { host, apiKey } = config.api.safe_harbor;
+const { host, access_token } = config.api.safe_harbor;
 
 export function setFormOptions(options){
   let state_names = map(options.aggregations.state_names, obj => { 
@@ -19,7 +19,9 @@ export function setFormOptions(options){
 
 export function requestFormOptions(){
   return (dispatch) => {
-    return fetch(`${host}?api_key=${apiKey}&size=1`)
+    return fetch(`${host}?size=1`, {
+      headers: { 'Authorization': 'Bearer ' + access_token }
+    })
         .then(response => response.json())
         .then(json => dispatch(setFormOptions(json)));
   };
